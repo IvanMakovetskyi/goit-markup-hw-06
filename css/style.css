@@ -87,7 +87,7 @@ nav{
 .nav__link{
     display: inline-block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    padding: 32px 0px;
+    padding: 33px 0px;
 
     font-weight: 500;
     font-size: 14px;
@@ -96,7 +96,7 @@ nav{
     color: #212121;
 }
 
-.nav__element:not(last-child){
+.nav__element:not(:last-child){
     margin-right: 50px;
 }
 
@@ -105,9 +105,16 @@ nav{
     color: #2196F3;
 }
 
+.active{
+    position: relative;
+}
+
 .active::after{
     content: "";
     display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -126,7 +133,7 @@ nav{
     color: #757575;
 }
 
-.contacts__link--right{
+.contacts__element:not(:last-child){
     margin-right: 30px;
 }
 
@@ -248,6 +255,7 @@ color: #2196F3;
     fill: #000000;
     width: 18px;
     height: 18px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .modal__close-icon:hover{
@@ -257,6 +265,7 @@ color: #2196F3;
 .modal__field{
     position: relative;
     margin-bottom: 28px;
+    
 }
 
 .modal__field:not(:last-child){
@@ -287,6 +296,7 @@ color: #2196F3;
     letter-spacing: 0.01em;
 
     color: #757575;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .modal__label--coment{
@@ -318,6 +328,7 @@ color: #2196F3;
     left: 16px;
     width: 18px;
     height: 18px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .checkbox{
@@ -330,19 +341,16 @@ color: #2196F3;
     width: 16px;
     height: 15px;
     border: 1px solid #212121;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.check:hover{
-    /* border: none; */
-    background-image: url(./img/checked.svg);
+.checkbox__icon{
+    display: block;
 }
 
-
-.ckeckbox__icon{
-    display: none;
-    width: 16px;
-    height: 15px;
-    fill: #212121;
+.checkbox__check:checked +.check{
+    border: #2196F3;
+    background-color: #2196F3;
 }
 
 .checkbox__text,
@@ -384,7 +392,7 @@ color: #2196F3;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 188px;
+    margin-bottom: 94px;
 }
 
 .main-pynkts__title{
@@ -761,20 +769,20 @@ address{
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
 
+    background: #2196F3;
+}
+
+.lets-go__text{
+    margin-right: 10px;
     font-weight: 900;
     font-size: 16px;
     line-height: 30px;
     text-align: center;
-    align-items: center;
-    justify-content: center;
     
     color: #ffffff;
-    background: #2196F3;
-}
-
-.btn__text{
-    margin-right: 10px;
 }
 
 /*PORTFOLIO*/ /*Портфолио*/
@@ -816,7 +824,7 @@ address{
     color: #212121;
 }
 
-.list-nav__element:not(last-child){
+.list-nav__element:not(:last-child){
     margin-right: 8px;
 }
 

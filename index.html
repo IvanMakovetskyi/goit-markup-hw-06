@@ -27,7 +27,7 @@
                         <svg class="contackts__icon mail" width= "16px" height= "11px">
                             <use href="./img/symbol-defs.svg#mail"></use>
                         </svg>
-                        <a class="contacts__link contacts__link--right" href="info@devstudio.com">info@devstudio.com</a>
+                        <a class="contacts__link" href="info@devstudio.com">info@devstudio.com</a>
                     </div>
                 </li>
                 <li class="contacts__element">
@@ -57,7 +57,7 @@
                             <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
                             <form class="modal__form">
                                 <div class="modal__field">
-                                    <input id="name" type="text" class="modal__input">
+                                    <input placeholder=" " id="name" type="text" class="modal__input">
                                     <svg class="modal__icon">
                                         <use href="./img/symbol-defs.svg#person-modal"></use>
                                     </svg>
@@ -65,7 +65,7 @@
                                 </div>
 
                                 <div class="modal__field">
-                                    <input id="tel" type="tel" class="modal__input">
+                                    <input placeholder=" " id="tel" type="tel" class="modal__input">
                                     <svg class="modal__icon">
                                         <use href="./img/symbol-defs.svg#phone-modal"></use>
                                     </svg>
@@ -73,7 +73,7 @@
                                 </div>
 
                                 <div class="modal__field">
-                                    <input id="mail" type="email" class="modal__input">
+                                    <input placeholder=" " id="mail" type="email" class="modal__input">
                                     <svg class="modal__icon">
                                         <use href="./img/symbol-defs.svg#mail-modal"></use>
                                     </svg>
@@ -81,14 +81,14 @@
                                 </div>
 
                                 <div class="modal__field">
-                                    <textarea id="coment" class="modal__input modal__input--coment"></textarea>
+                                    <textarea placeholder=" " id="coment" class="modal__input modal__input--coment"></textarea>
                                     <label class="modal__label modal__label--coment" for="coment">Комментарий</label>
                                 </div>
 
                                 <label class="checkbox">
-                                    <input type="checkbox" class="visually-hidden">
+                                    <input type="checkbox" class="visually-hidden checkbox__check">
                                     <div class="check">
-                                        <svg class="ckeckbox__icon">
+                                        <svg class="checkbox__icon">
                                             <use href="./img/symbol-defs.svg#checked"></use>
                                         </svg>
                                     </div>
@@ -407,7 +407,7 @@
                 <h3 class="lets-go__title">Подписаться на рассылку</h3>
                 <form class="lets-go__form">
                     <input placeholder="E-mail" type="email" class="lets-go__input" >
-                    <button class="lets-go__btn">Подписаться</button>
+                    <button class="lets-go__btn"><span class="lets-go__text">Подписаться</span><svg width="24" height="24" class="clients-list__icon"><use href="./img/symbol-defs.svg#fly"></use></svg></button>
                 </form>
                 </div>
             </div>
