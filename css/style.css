@@ -345,12 +345,18 @@ color: #2196F3;
 }
 
 .checkbox__icon{
-    display: block;
+    display: none;
+    width: 16px;
+    height: 15px;
 }
 
 .checkbox__check:checked +.check{
     border: #2196F3;
     background-color: #2196F3;
+}
+
+.checkbox__check:checked +.checkbox__icon{
+    display: block;
 }
 
 .checkbox__text,
