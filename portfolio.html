@@ -42,14 +42,16 @@
     </header>
     <main>
         <section class="our-projects">
-            <h1 class="our-projects__title">Наші проекти</h1>
-            <ul class="list-nav">
-                <li><a class="list-nav__element" href="">Все</a></li>
-                <li><a class="list-nav__element" href="">Веб-сайты</a></li>
-                <li><a class="list-nav__element" href="">Приложения</a></li>
-                <li><a class="list-nav__element" href="">Дизайн</a></li>
-                <li><a class="list-nav__element" href="">Маркетинг</a></li>
-            </ul>
+            <div class="our-projects__nav">
+                <h1 class="our-projects__title">Наші проекти</h1>
+                <ul class="list-nav">
+                    <li class="list-nav__element"><a class="list-nav__link" href="">Все</a></li>
+                    <li class="list-nav__element"><a class="list-nav__link" href="">Веб-сайты</a></li>
+                    <li class="list-nav__element"><a class="list-nav__link" href="">Приложения</a></li>
+                    <li class="list-nav__element"><a class="list-nav__link" href="">Дизайн</a></li>
+                    <li class="list-nav__element"><a class="list-nav__link" href="">Маркетинг</a></li>
+                </ul>
+            </div>
             <ul class="projects-list">
                 <li class="project">
                     <div class="project__overlay">
@@ -191,13 +193,13 @@
             <!--Lets Go-->
             <div class="lets-go">
                 <h3 class="lets-go__title">Подписаться на рассылку</h3>
-                <div class="lets-go__form">
-                <p class="lets-go__text">E-mail</p>
-                <button type="button" class="lets-go__btn" href="">Подписаться</button>
+                <form class="lets-go__form">
+                    <input placeholder="E-mail" type="email" class="lets-go__input" >
+                    <button class="lets-go__btn"><span class="lets-go__text">Подписаться</span><svg width="24" height="24" class="clients-list__icon"><use href="./img/symbol-defs.svg#fly"></use></svg></button>
+                </form>
                 </div>
             </div>
         </div>
-        <p class="copyright">2020 | Developed by GoIT Students </p>
     </footer>
 </body>
 </html>

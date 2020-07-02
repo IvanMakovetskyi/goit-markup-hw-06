@@ -666,7 +666,7 @@ address{
     margin-bottom: 10px;
 
     font-family: Raleway;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 22px;
     line-height: 26px;
 }
@@ -790,12 +790,11 @@ address{
 /*PORTFOLIO*/ /*Портфолио*/
 
 .our-projects{
-    width: 1240px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 95px;
+    width: 1200px;
+    padding: 0 15;
+    padding-top: 94px;
+    margin: 0 auto;
+    margin-bottom: 94px;
 }
 
 .our-projects__title{
@@ -803,17 +802,19 @@ address{
 }
 
 /*Nav-projects*/ /*Навигация*/
+
+.our-projects__nav{
+    display: flex;
+    justify-content: center;
+}
+
 .list-nav{
     display: flex;
-    width: 640px;
-    margin-top: 95px;
     margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
-.list-nav__element{
+.list-nav__link{
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 6px 22px;
     border-radius: 4px;
@@ -830,8 +831,8 @@ address{
     margin-right: 8px;
 }
 
-.list-nav__element:focus,
-.list-nav__element:hover{
+.list-nav__element:focus .list-nav__link,
+.list-nav__element:hover .list-nav__link{
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
     background-color: #2196F3;
     color: #ffffff;
