@@ -502,16 +502,15 @@ color: #2196F3;
 /*Comand*/ /*Команда*/
 
 .comand{
-    padding-top: 94px;
-    width: 1200px;
-    height: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 94px;
+    padding: 94px 0px;
+    background-color: #F5F4FA;
 }
 
-.comand--color{
-    background-color: #F5F4FA;
+.comand--width{
+    width: 1200px;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .comand__title{
